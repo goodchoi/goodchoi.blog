@@ -12,14 +12,14 @@ tags:
 스프링 부트 버전 2에서 정식으로 지원하는 라이브러리로 채택되었다.
 
 ### DB Connection Pool(DBCP)이란?
-![connectionpool.webp](커넥션 풀){:width="560px"}
+<img alt="connectionpool.webp" src="connectionpool.webp" title="커넥션 풀" width="560"/>
 
 미리 데이터베이스와의 TCP통신을 통해 일정 개수의 커넥션을 생성하여 보관하고
 요청이 들어오면 커넥션 풀 내부의 커넥션을 사용한다. 커넥션의 생성과 삭제의 오버헤드를 줄일 수 있다.
 
 
 ### 성능
-![hikari_benchmark.webp](hikartCp 벤치마크){:width="560px"}
+<img alt="hikari_benchmark.webp" src="hikari_benchmark.webp" title="hikariCp 벤치마크" width="560"/>
 
 위 사진은 `hikari CP` 깃헙에서 확인할 수 있는 다른 커넥션풀 라이브러리들과 비교한 
 벤치마크 테스트 결과로, 왼쪽은 `DataSource.getConnection()/Connection.close()`의 성능,
