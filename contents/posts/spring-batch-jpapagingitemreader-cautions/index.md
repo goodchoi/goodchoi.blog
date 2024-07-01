@@ -1,7 +1,7 @@
 ---
 title: Spring batch - JpaPagingItemReader 사용시 dirty checking 비정상 작동 현상
-date: 2024-05-20
-update: 2024-05-20
+date: 2024-04-16
+update: 2024-04-16
 tags: 
   - spring batch
   - JpaPagingItemReader
