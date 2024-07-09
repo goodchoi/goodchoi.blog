@@ -8,7 +8,7 @@ tags:
 series: "Spring Batch 성능 개선"
 ---
 
-![spring-batch.webp](../spring-batch-customReader-partOne/spring-batch.webp)
+![spring-batch.webp](../spring-batch-customReader-partone/spring-batch.webp)
 
 지난 글에서 직접 커스텀하여 만들었던 커스텀 reader를 JpaPagingItemReader와 비교했을때
 어느 정도 성능 차이를 보여주는지 테스트 해보려고 한다. 테스트는 로컬 환경에서 진행했으며, 테스트 설정 환경은 다음과 같다.
