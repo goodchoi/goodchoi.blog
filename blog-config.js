@@ -1,6 +1,6 @@
 module.exports = {
   title: "goodchoi blog",
-  description: "심연 끝에 성장하는 개발자",
+  description: "차분히 또 차분히 🚶🏻",
   author: "Goodchoi",
   siteUrl: "https://goodchoi.site",
   links: {
