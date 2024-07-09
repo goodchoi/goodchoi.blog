@@ -7,7 +7,7 @@ tags:
   - JpaPagingItemReader
 ---
 
-![spring-batch.webp](../spring-batch-customReader-partone/spring-batch.webp)
+![spring-batch.webp](../spring-batch-custom-reader-part-one/spring-batch.webp)
 
 스프링 배치의 step을 구성할때 reader로 어떤 것을 사용할 지 고민이 될 때가 많다. 이때 데이터 접근 기술로 jpa를 사용할 때,
 가장 쉽게 고려되는 것 중 하나가 JpaPagingItemReader이다.(Spring-data-jpa를 사용할 시 RepositoryItemReader도 유용하게 쓰인다.)

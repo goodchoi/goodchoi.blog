@@ -8,7 +8,7 @@ tags:
 series: "Spring Batch 성능 개선"
 ---
 
-![spring-batch.webp](../spring-batch-customReader-partone/spring-batch.webp)
+![spring-batch.webp](../spring-batch-custom-reader-part-one/spring-batch.webp)
 
 <a href="https://goodchoi.site/spring-batch-customReader-1/" target="_blank">지난 글</a>에서 페이징 방식을 채택하는
 기존의 `itemReader`가 가지는 태생적 문제점을 살펴봤다. 이제 남은 것은 문제의 솔루션인 `ZeroOffset` 페이징 방식으로 동작하는 
