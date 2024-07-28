@@ -10,8 +10,6 @@ import * as React from "react"
 
 export const onRenderBody = ({ setHeadComponents }) => {
     setHeadComponents([
-        // <link rel="stylesheet" as="style" crossOrigin
-        //       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>,
         <link rel="stylesheet" as="style" crossOrigin
               href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
     ])

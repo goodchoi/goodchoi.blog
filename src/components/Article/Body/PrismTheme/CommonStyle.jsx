@@ -4,16 +4,17 @@ const CommonStyle = css`
   code[class*="language-"],
   pre[class*="language-"] {
     margin-bottom: 24px;
-    font-size: 13.5px;
+    font-size: 15.5px !important;
+    border-radius: 7px;
     color: #ccc;
     background: none;
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-family: "Inconsolata", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: 1.5;
+    line-height: 1.4;
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -27,8 +28,10 @@ const CommonStyle = css`
 
   /* Code blocks */
   pre[class*="language-"] {
-    padding: 1em;
+    padding: 1.0em;
     overflow: auto;
+    font-size: 14.6px !important;
+    
   }
 
   /* Inline code */
@@ -36,6 +39,7 @@ const CommonStyle = css`
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
+    font-size: 14.6px !important;
   }
 
   .token.important,
