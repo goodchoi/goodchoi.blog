@@ -8,6 +8,8 @@ const GRAY3 = "#dee2e6"
 const GRAY2 = "#e9ecef"
 const GRAY1 = "#f1f3f5"
 const GRAY0 = "#f8f9fa"
+const GRAY11 = "#2989e8"
+const GRAY12 = "#71aeea"
 
 export const light = {
   name: "light",
@@ -44,6 +46,7 @@ export const light = {
     textFieldBorder: GRAY4,
     textFieldActivatedBorder: GRAY5,
     tableBackground: GRAY1,
+    linkText: GRAY11
   },
 }
 
@@ -82,5 +85,6 @@ export const dark = {
     textFieldBorder: GRAY7,
     textFieldActivatedBorder: GRAY6,
     tableBackground: "#292e33",
+    linkText: GRAY12
   },
 }

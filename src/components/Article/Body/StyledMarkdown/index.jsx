@@ -46,19 +46,19 @@ const StyledMarkdown = styled.div`
   }
 
   & h2 {
-    margin-top: 100px;
-    margin-bottom: 24px;
+    margin-top: 70px;
+    margin-bottom: 15px;
     font-size: 28px;
   }
 
   & h3 {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 20px;
     font-size: 22.4px;
   }
 
   & h4 {
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 15px;
     font-size: 17.6px;
   }
@@ -218,13 +218,16 @@ const StyledMarkdown = styled.div`
   }
 
   & a {
+    font-weight: bold;
     padding: 1.6px 0;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.linkText};
+    transition: color 0.3s ease, background-color 0.3s ease;
   }
 
   & a:hover {
     background-color: ${props => props.theme.colors.text};
     color: ${props => props.theme.colors.hoveredLinkText};
+
   }
 `
 
