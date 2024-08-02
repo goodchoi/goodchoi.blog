@@ -24,6 +24,7 @@ import { siteUrl, description, author, links } from "../../../blog-config"
 const BioWrapper = styled.div`
   display: flex;
   align-items: center;
+  
 
   @media (max-width: 768px) {
     padding: 0 15px;
@@ -44,6 +45,7 @@ const Profile = styled.div`
   background-image: url(${profileImageRoot}/profile.png);
   background-size: cover;
   background-position: center;
+  box-shadow: 0 0 2px;
 `
 
 const Author = styled.div`

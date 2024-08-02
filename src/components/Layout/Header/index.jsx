@@ -14,7 +14,7 @@ import {
   FaListUl,
 } from "react-icons/fa"
 
-const HeaderWrapper = styled.header`
+const HeaderWrapper = styled.header `
   display: block;
   position: fixed;
   top: ${props => (props.isHidden ? -60 : 0)}px;
