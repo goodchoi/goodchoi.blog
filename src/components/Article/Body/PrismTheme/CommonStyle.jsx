@@ -8,7 +8,7 @@ const CommonStyle = css`
     border-radius: 7px;
     color: #ccc;
     background: none;
-    font-family: "Inconsolata", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-family: "Inconsolata",Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -31,7 +31,6 @@ const CommonStyle = css`
     padding: 1.0em;
     overflow: auto;
     font-size: 14.6px !important;
-    
   }
 
   /* Inline code */
@@ -39,7 +38,7 @@ const CommonStyle = css`
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
-    font-size: 15.7px !important;
+    font-size: 15.0px !important;
   }
 
   .token.important,
