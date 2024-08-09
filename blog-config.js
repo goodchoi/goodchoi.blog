@@ -1,5 +1,5 @@
 module.exports = {
-  title: "goodchoi blog",
+  title: "goodchoi's blog",
   description: "차분히 또 차분히 🚶🏻",
   author: "Goodchoi",
   siteUrl: "https://goodchoi.site",

@@ -44,10 +44,12 @@ const Inner = styled.div`
 `
 
 const BlogTitle = styled.span`
-  letter-spacing: -1px;
-  font-family: "Source Code Pro", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
+  letter-spacing:-1px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  font-style: italic;
+  text-shadow: 2px 2px ${props => props.theme.colors.titleShadow};
   color: ${props => props.theme.colors.text};
 
   & > a {
