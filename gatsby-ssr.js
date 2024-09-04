@@ -12,6 +12,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     setHeadComponents([
         // <link rel="stylesheet" as="style" crossOrigin
         //       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>,
-        <link rel="preload" href="fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossOrigin/>,
+        <link rel="stylesheet" as="style" crossOrigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
     ])
 }
