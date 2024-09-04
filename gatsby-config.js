@@ -40,7 +40,7 @@ module.exports = {
         fonts: [
           `noto sans kr:300,400,500,700,900`,
           `source code pro:700`,
-          `Exo 2:800i`
+          `Exo 2:800i`,
         ],
         display: "swap",
       },
