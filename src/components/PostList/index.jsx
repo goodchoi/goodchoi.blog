@@ -34,6 +34,7 @@ const Excerpt = styled.p`
   margin-bottom: 32px;
   line-height: 1.7;
   font-size: 16px;
+  font-weight: 200;
   color: ${props => props.theme.colors.secondaryText};
   word-break: break-all;
 `

@@ -22,9 +22,9 @@ const Wrapper = styled.h1`
 
 const Title = ({ size, children }) => {
   const sizes = {
-    sm: "19.2px",
-    md: "25.6px",
-    bg: "28.6px",
+    sm: "19.4px",
+    md: "25.9px",
+    bg: "28.9px",
   }
 
   return <Wrapper size={sizes[size]}> {children} </Wrapper>

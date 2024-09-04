@@ -14,9 +14,12 @@ const GRAY12 = "#71aeea"
 export const light = {
   name: "light",
   colors: {
+    color1: "#ffc400",
+    color2: "#ff0069",
+    color3: "#c00fdc",
     bodyBackground: "#ffffff",
     text: GRAY9,
-    secondaryText: GRAY7,
+    secondaryText: "#333232",
     tertiaryText: GRAY6,
     mutedText: GRAY5,
     hoveredLinkText: GRAY0,

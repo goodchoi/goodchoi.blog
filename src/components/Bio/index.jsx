@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import CheckMark from "./Instagram-Verification Badge-64.png"
 
 import {
   FaGithub,
@@ -36,23 +37,52 @@ const profileImageRoot =
     ? "http://localhost:8000"
     : siteUrl
 
-const Profile = styled.div`
-  flex: 0 0 auto;
-  margin-right: 16px;
+const ProfileWrapper = styled.div`
   width: 128px;
   height: 128px;
-  border-radius: 999px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  background-image: linear-gradient(${props => props.theme.colors.bodyBackground}, ${props => props.theme.colors.bodyBackground}), 
+  linear-gradient(45deg, #ffc400 20%,  #ff0069 55%, #c00fdc 85%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: absolute;
+`
+const Profile = styled.div`
+  width: 118px;
+  height: 118px;
+  border-radius: 100%;
   background-image: url(${profileImageRoot}/profile.png);
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 2px;
+  position: absolute;
+ `
+const ProfileFrame = styled.div`
+  flex: 0 0 auto;
+  margin-right: 16px;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
+const TestWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`
 const Author = styled.div`
   margin-bottom: 4.8px;
   font-size: 24px;
   font-weight: 700;
   color: ${props => props.theme.colors.text};
+`
+
+const InstagramMark = styled.img`
+  width: 27.1px;
+  margin-left: 4.8px;
+  padding-bottom: 6.3px;
 `
 
 const Description = styled.div`
@@ -110,9 +140,12 @@ const Bio = () => {
 
   return (
     <BioWrapper id="bio">
-      <Profile />
+      <ProfileFrame><ProfileWrapper/><Profile /></ProfileFrame>
       <div>
-        <Author>@{author}</Author>
+        <TestWrapper>
+          <Author>@{author}</Author>
+          <InstagramMark src={CheckMark} alt="CheckMark" />
+        </TestWrapper>
         <Description>{description}</Description>
         <LinksWrapper>
           <Link link={github}>
