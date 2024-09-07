@@ -209,7 +209,7 @@ private E dequeue() {
 큐에서 데이터를 꺼내면 더이상 큐가 가득찬 상태가 아니므로 `notFull` condition을 기다리고 있는 스레드를 깨운다.
 
 ## 💬 결론
-`ArrayBlockingQueue`는 동기화문제를 해결하기위한 `mutext`로 `ReentrantLock`을 사용하였고,
+`ArrayBlockingQueue`는 동기화문제를 해결하기위해 `mutex`로 `ReentrantLock`을 사용하였고,
 `Condition`을 사용하여 큐가 가득찼을때와 비어있을때 두가지 조건을 구현하였다.
 
 `synchronized`키워드 또한 `wait`,`notify`같은 메서드를 사용하여 특정 조건에대한 대기와 깨움을 구현 할 수 있지만,

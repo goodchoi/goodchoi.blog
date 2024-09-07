@@ -1,5 +1,5 @@
 ---
-title: java 싱글톤 DCL(double-checked-locking) 기법에서 volatile의 역할 
+title: Java 싱글톤 DCL(double-checked-locking) 기법에서 volatile의 역할 
 date: 2024-03-20
 update: 2024-03-20
 tags:
@@ -123,12 +123,10 @@ public class Test3 {
 
 > But to answer your actual question: basically all implementations of the JVM implement the memory model in a looser fashion than its specification. Therefore, the non-volatile DCL might just work on many machines despite the improper synchronization because of an implementation detail. You should however never code against the implementation but always against the specification. Otherwise, your code might fail only sometimes and only on some machines what is a terrible bug to trace! This has nothing to do with the synchronized block being atomic, it solely relates to how your VM executes your code where the constructor might incidentally always be executed before publicizing your instance to the resource field.
 
-기본적으로 JVM의 모든 구현체들은 메모리 모델을 명세보다 더 느슨하게 구현한다. 
+> 기본적으로 JVM의 모든 구현체들은 메모리 모델을 명세보다 더 느슨하게 구현해.
 따라서, 잘못된 동기화에도 불구하고 non-volatile DCL (Double-Checked Locking)이 
 문제없이 동작할 수 있어. 그러나, 구현에 의존하지 말고 항상 명세에 맞춰 코드를 작성해야해. 
 그렇지 않으면 코드가 때때로 특정 머신에서만 실패할 수 있으며, 이는 추적하기 매우 어려운 버그가 될 수 있어!
-
-라고 해석할 수 있다. (실제로는 이런 뉘앙스로 작성하진 않았겠지만, 내가 느끼기엔 선배개발자가 따뜻하게 충고해주는 느낌이였다.)
 
 ## 해결
 비록 문제상황을 관측하는데는 실패했지만, 위와 같은 상황이 `이론적으로` 발생할 수 있으며 이는 `volatile`키워드로 해결할 수 있다.
