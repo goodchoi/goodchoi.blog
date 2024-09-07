@@ -4,7 +4,7 @@ const CommonStyle = css`
   code[class*="language-"],
   pre[class*="language-"] {
     margin-bottom: 24px;
-    font-size: 15.5px !important;
+    font-size: 16.5px !important;
     border-radius: 7px;
     color: #ccc;
     background: none;
@@ -39,7 +39,7 @@ const CommonStyle = css`
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
-    font-size: 14.6px !important;
+    font-size: 15.7px !important;
   }
 
   .token.important,
