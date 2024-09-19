@@ -49,6 +49,7 @@ const StyledMarkdown = styled.div`
     margin-top: 70px;
     margin-bottom: 15px;
     font-size: 28px;
+    border-bottom: 1px solid ${props => props.theme.colors.secondHeadLine};
   }
 
   & h3 {

@@ -9,7 +9,7 @@ import getElementOffset from "utils/getElmentOffset"
 
 import RevealOnScroll from "components/RevealOnScroll"
 
-const STICK_OFFSET = 100
+const STICK_OFFSET = 200
 
 const TocWrapper = styled.div`
   position: absolute;
@@ -18,11 +18,12 @@ const TocWrapper = styled.div`
 
   & > div {
     padding-right: 20px;
-    padding-left: 16px;
-    margin-left: 48px;
+    padding-left: 20px;
+    margin-left: 108px;
     position: relative;
     width: 240px;
     max-height: calc(100% - 185px);
+    border-left: 1px solid ${props => props.theme.colors.secondHeadLine};
     overflow-y: auto;
 
     ::-webkit-scrollbar {
@@ -53,7 +54,7 @@ const ParagraphTitle = styled.div`
   margin-bottom: 8px;
   padding-left: ${props => (props.subtitle ? 19.2 : 0)}px;
   font-size: 14.4px;
-  color: ${props => props.theme.colors.mutedText};
+  color: ${props => props.theme.colors.tocText};
   line-height: 1.3;
   transition: all 0.2s;
 
