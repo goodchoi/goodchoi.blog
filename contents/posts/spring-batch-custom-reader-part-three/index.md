@@ -98,8 +98,7 @@ public ExitStatus afterStep(StepExecution stepExecution) {
 경과 시간: **51초**
 
 ### 3. 결과 정리
-![compare_graph.webp](compare_graph.webp)
-
+![compare_graph_jpa_paging.webp](compare_graph_jpa_paging.webp)
 `ZeroOffsetJpaPagingItemReader`가 선형적인 그래프를 그리는 반면 `JpaPagingItemReader`는 건너 뛰어야하는 데이터 수가 커질 수록
 경과시간이 기하급수적으로 뛰는것을 확인할 수 있었다.
 
