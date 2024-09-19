@@ -30,9 +30,9 @@ series: "Spring Batch 성능 개선"
 이들 중 `jpa` 환경에서 가장 많이 사용되는 것은 `JpaPagingItemReader` 와 `RepositoryItemReader`인 것 같다.
 
 
-| 종류                  | 사용법                                             | 특징                                    | 
-|---------------------|-------------------------------------------------|---------------------------------------|
-| **JpaPagingItemReader** | reader 생성시 실행할 `JPQL` 문자열을 파라미터로 등록             | 트랜잭션을 별도로관리                           |
+| 종류                       | 사용법                                                      | 특징                                    | 
+|--------------------------|----------------------------------------------------------|---------------------------------------|
+| **JpaPagingItemReader**  | reader 생성시 실행할 `JPQL` 문자열을 파라미터로 등록                      | 트랜잭션을 별도로관리                           |
 | **RepositoryItemReader** | 대상 엔티티의 `repository`(스프링 데이터 jpa)와 실행할 메서드의 이름을 파라미터로 등록 | 스프링 데이터 jpa기능 사용가능, 트랜잭션을 청크 트랜잭션에 위임 |
 
 그렇다면 jpa를 사용할때 `ZeroOffset`으로 동작하도록 개선하려면 어떤 것을 선택하는 것이 유리할까?
@@ -369,7 +369,7 @@ private EntityManager entityManager;
 현상들은 발생하지않았고, `dirty checking` 또한 완벽하게 작동하는 것을 확인했다.
 
 ## 4. 정리
-모든 코드는 <a href="https://goodchoi.site/spring-batch-customReader-1/" target="_blank">ZeroOffsetJpaPagingItemReader</a>에서 확인할 수 있다.
+모든 코드는 <a href="https://github.com/f-lab-edu/weshare/blob/main/weshare-batch/src/main/java/com/flab/batch/CustomReader/ZeroOffsetJpaPagingItemReader.java" target="_blank">ZeroOffsetJpaPagingItemReader</a>에서 확인할 수 있다.
 기존 코드를 수정하는 방식으로 작성 되었기 때문에 미처 생각하지 못한 사이드 이펙트와 내가 찾지 못한 예외가 굉장히 많을 것으로 예상된다.
 하지만 나는 `ZeroOffset`으로 동작했을때 기존 방식과 어느정도 성능차이가 발생하는 지 비교해보고 싶었고, 해당 코드를 작성하면서 자바 `reflection` api,
 스프링 배치내부에서 트랜잭션 관리 등을 더 깊게 이해하는 계기가 되었다. 
